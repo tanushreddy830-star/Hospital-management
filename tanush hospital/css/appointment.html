@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Appointment | Tanush Hospital</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            TANUSH <span>HOSPITAL</span>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="appointment.html" class="active">Appointment</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+    <main class="page">
+
+        <section class="page-header">
+
+            <p class="tag">TANUSH HOSPITAL</p>
+
+            <h1>
+                Book An <span>Appointment</span>
+            </h1>
+
+            <p>
+                Fill in your details and select your preferred
+                department.
+            </p>
+
+        </section>
+
+
+        <section class="form-section">
+
+            <form id="appointmentForm">
+
+                <h2>Patient Information</h2>
+
+                <div class="form-grid">
+
+                    <div>
+                        <label>Full Name</label>
+
+                        <input
+                            type="text"
+                            placeholder="Enter your name"
+                            required>
+                    </div>
+
+
+                    <div>
+                        <label>Phone Number</label>
+
+                        <input
+                            type="tel"
+                            placeholder="Enter phone number"
+                            required>
+                    </div>
+
+
+                    <div>
+                        <label>Email</label>
+
+                        <input
+                            type="email"
+                            placeholder="Enter email"
+                            required>
+                    </div>
+
+
+                    <div>
+                        <label>Department</label>
+
+                        <select required>
+
+                            <option value="">
+                                Select Department
+                            </option>
+
+                            <option>Cardiology</option>
+                            <option>Neurology</option>
+                            <option>Orthopedics</option>
+                            <option>Pediatrics</option>
+                            <option>General Medicine</option>
+                            <option>Dermatology</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div>
+                        <label>Preferred Date</label>
+
+                        <input
+                            type="date"
+                            required>
+                    </div>
+
+
+                    <div>
+                        <label>Preferred Time</label>
+
+                        <input
+                            type="time"
+                            required>
+                    </div>
+
+                </div>
+
+
+                <label>Message</label>
+
+                <textarea
+                    rows="5"
+                    placeholder="Describe your requirement"></textarea>
+
+
+                <button type="submit" class="submit-btn">
+                    Confirm Appointment →
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        © 2026 Tanush Hospital. All Rights Reserved.
+    </footer>
+
+
+    <script>
+
+        document
+            .getElementById("appointmentForm")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+                alert(
+                    "Appointment request submitted successfully!"
+                );
+
+                this.reset();
+
+            });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Tanush Hospital</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            TANUSH <span>HOSPITAL</span>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+    <main class="page">
+
+        <section class="page-header">
+
+            <p class="tag">TANUSH HOSPITAL</p>
+
+            <h1>
+                Get In <span>Touch</span>
+            </h1>
+
+            <p>
+                Contact our hospital team for appointments,
+                enquiries and assistance.
+            </p>
+
+        </section>
+
+
+        <section class="contact-grid">
+
+
+            <!-- CONTACT INFORMATION -->
+
+            <div class="contact-info">
+
+                <h2>Contact Information</h2>
+
+                <div class="contact-item">
+                    <span>📍</span>
+
+                    <div>
+                        <h3>Address</h3>
+                        <p>
+                            Tanush Hospital,<br>
+                            Main Road, City Center,<br>
+                            Andhra Pradesh, India
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="contact-item">
+                    <span>📞</span>
+
+                    <div>
+                        <h3>Phone</h3>
+                        <p>
+                            +91 98765 43210
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="contact-item">
+                    <span>✉️</span>
+
+                    <div>
+                        <h3>Email</h3>
+                        <p>
+                            info@tanushhospital.com
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="contact-item">
+                    <span>🕒</span>
+
+                    <div>
+                        <h3>Working Hours</h3>
+                        <p>
+                            Monday - Saturday<br>
+                            8:00 AM - 8:00 PM
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+
+            <div class="form-section">
+
+                <form id="contactForm">
+
+                    <h2>Send Us A Message</h2>
+
+                    <label>Full Name</label>
+
+                    <input
+                        type="text"
+                        placeholder="Your name"
+                        required>
+
+
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        placeholder="Your email"
+                        required>
+
+
+                    <label>Phone</label>
+
+                    <input
+                        type="tel"
+                        placeholder="Your phone number"
+                        required>
+
+
+                    <label>Message</label>
+
+                    <textarea
+                        rows="6"
+                        placeholder="Write your message..."
+                        required></textarea>
+
+
+                    <button type="submit" class="submit-btn">
+                        Send Message →
+                    </button>
+
+                </form>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        © 2026 Tanush Hospital. All Rights Reserved.
+    </footer>
+
+
+    <script>
+
+        document
+            .getElementById("contactForm")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+                alert(
+                    "Thank you! Your message has been submitted."
+                );
+
+                this.reset();
+
+            });
+
+    </script>
+
+</body>
+</html>
